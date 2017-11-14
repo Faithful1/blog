@@ -1,0 +1,43 @@
+{
+  "name": "@ladm/blog-api",
+  "version": "1.0.0",
+  "description": "serverless blog api",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "nodemon --exec \"node -r dotenv/config -r babel-register src/server/index.js\" -w src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "faithful <faithfulanere@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-errors": "^1.5.1",
+    "apollo-resolvers": "^1.0.3",
+    "apollo-server-express": "^1.1.2",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "graphql": "^0.11.2",
+    "graphql-tools": "^2.5.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.12.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-module-resolver": "^3.0.0-beta.5",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-import-resolver-babel-module": "^4.0.0-beta.5",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.12.1"
+  }
+}
